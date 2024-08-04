@@ -39,7 +39,7 @@ The goal of this project is to create a Modular Compliance Dashboard using React
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/modular-compliance-dashboard.git
+   git clone https://github.com/thanhdang1709/Modular-Compliance-Dashboard.git
    cd modular-compliance-dashboard
 
 2. **Install dependencies**:
