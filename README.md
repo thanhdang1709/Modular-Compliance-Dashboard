@@ -77,4 +77,8 @@ The goal of this project is to create a Modular Compliance Dashboard using React
 
 ## Video Demo
 
-[Watch the video](./demo.mov)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=3gwMm69MmNY">
+    <img src="https://i3.ytimg.com/vi/3gwMm69MmNY/maxresdefault.jpg" alt="Watch the video" width="600" />
+  </a>
+</p>
