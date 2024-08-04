@@ -1,5 +1,8 @@
 # Modular Compliance Dashboard
 
+### Example:
+You can check out my progress here: [Modular Compliance Dashboard](https://biwoco.pages.dev/) <-- here
+
 ## Project Description
 The goal of this project is to create a Modular Compliance Dashboard using React, Zustand for state management, and AWS Amplify for authentication. This dashboard focuses on displaying compliance-related information in a modular and user-friendly way.
 
