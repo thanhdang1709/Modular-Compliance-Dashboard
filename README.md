@@ -73,3 +73,8 @@ The goal of this project is to create a Modular Compliance Dashboard using React
     # https://localhost:3001 (task-overview)
     # https://localhost:3002 (compliance-status)
     # https://localhost:3003 (recent-activity)
+
+
+## Video Demo
+
+[Watch the video](./demo.mov)

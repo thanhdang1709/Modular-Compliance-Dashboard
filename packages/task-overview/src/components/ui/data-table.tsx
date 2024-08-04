@@ -76,10 +76,10 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
-                  className='hover:bg-gray-50 py-2'
+                  className='hover:bg-gray-100 py-2 px-4'
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell key={cell.id} className='py-4'>
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
