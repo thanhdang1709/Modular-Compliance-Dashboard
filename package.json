@@ -1,0 +1,17 @@
+{
+  "name": "modular-compliance-dashboard",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run start --workspaces --if-present"
+  },
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0"
+  }
+}

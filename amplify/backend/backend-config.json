@@ -1,0 +1,128 @@
+{
+  "api": {
+    "ComplianceAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "tasksFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "biwoco925142dd": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "complianceStatusFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "recentActivitiesFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "tasksFunction": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamo39bb570d"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_complianceStatusFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "complianceStatusFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_complianceStatusFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "complianceStatusFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_recentActivitiesFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "recentActivitiesFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_recentActivitiesFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "recentActivitiesFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_tasksFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "tasksFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_tasksFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "tasksFunction"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamo39bb570d": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

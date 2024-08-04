@@ -1,0 +1,80 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-biwoco-dev-d100d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::356721287536:role/amplify-biwoco-dev-d100d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::356721287536:role/amplify-biwoco-dev-d100d-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-biwoco-dev-d100d-deployment",
+      "UnauthRoleName": "amplify-biwoco-dev-d100d-unauthRole",
+      "StackName": "amplify-biwoco-dev-d100d",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:356721287536:stack/amplify-biwoco-dev-d100d/5e33bd20-508b-11ef-9c0a-022679623e55",
+      "AmplifyAppId": "d1q3sm2ripd9a7",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-biwoco-dev-d100d-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "biwoco925142dd": {}
+      },
+      "storage": {
+        "dynamodfa016cb": {}
+      },
+      "function": {
+        "tasksFunction": {
+          "deploymentBucketName": "amplify-biwoco-dev-d100d-deployment",
+          "s3Key": "amplify-builds/tasksFunction-6f666336416c614d524f-build.zip"
+        },
+        "complianceStatusFunction": {
+          "deploymentBucketName": "amplify-biwoco-dev-d100d-deployment",
+          "s3Key": "amplify-builds/complianceStatusFunction-33442b66686a776c5352-build.zip"
+        },
+        "recentActivitiesFunction": {
+          "deploymentBucketName": "amplify-biwoco-dev-d100d-deployment",
+          "s3Key": "amplify-builds/recentActivitiesFunction-726e4f62636b70725630-build.zip"
+        }
+      },
+      "api": {
+        "ComplianceAPI": {}
+      }
+    }
+  },
+  "biwoco": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-biwoco-biwoco-02167-authRole",
+      "UnauthRoleArn": "arn:aws:iam::356721287536:role/amplify-biwoco-biwoco-02167-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::356721287536:role/amplify-biwoco-biwoco-02167-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-biwoco-biwoco-02167-deployment",
+      "UnauthRoleName": "amplify-biwoco-biwoco-02167-unauthRole",
+      "StackName": "amplify-biwoco-biwoco-02167",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:356721287536:stack/amplify-biwoco-biwoco-02167/6b38a2e0-51e1-11ef-9f47-067e6722a7f7",
+      "AmplifyAppId": "d3s1iwbr2evh6z",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-biwoco-biwoco-02167-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "biwoco925142dd": {}
+      },
+      "function": {
+        "complianceStatusFunction": {
+          "deploymentBucketName": "amplify-biwoco-biwoco-02167-deployment",
+          "s3Key": "amplify-builds/complianceStatusFunction-61306e41576267377275-build.zip"
+        },
+        "recentActivitiesFunction": {
+          "deploymentBucketName": "amplify-biwoco-biwoco-02167-deployment",
+          "s3Key": "amplify-builds/recentActivitiesFunction-7775473256386630416d-build.zip"
+        },
+        "tasksFunction": {
+          "deploymentBucketName": "amplify-biwoco-biwoco-02167-deployment",
+          "s3Key": "amplify-builds/tasksFunction-56496b69355563536139-build.zip"
+        }
+      },
+      "storage": {
+        "dynamo39bb570d": {}
+      },
+      "api": {
+        "ComplianceAPI": {}
+      }
+    }
+  }
+}

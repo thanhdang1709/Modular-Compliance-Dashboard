@@ -1,0 +1,16 @@
+{
+  "resourceName": "dynamo39bb570d",
+  "tableName": "tasks",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "title",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "tasksFunction"
+  ]
+}
