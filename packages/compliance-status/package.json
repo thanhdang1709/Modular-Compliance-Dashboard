@@ -37,7 +37,7 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --config webpack.prod.js"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-merge": "^6.1.0"
   }
 }

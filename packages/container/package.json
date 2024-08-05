@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.prod.js"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +66,7 @@
     "typescript": "^5.5.4",
     "webpack": "^5.93.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^5.0.4"
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^6.1.0"
   }
 }
